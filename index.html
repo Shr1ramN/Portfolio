@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Shriram Narayana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="animate-this-element">
+    <div class="background AnimationBackground">
+        <header>
+            <div class="logo">
+            </div>
+            <div class="header-links MenuTextAnimation">
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </header>
+
+        <div class="container-text TextAnimation">
+            <div class="text">
+                <video src="mountains.mp4" autoplay muted loop></video>
+                <h3><i class="fa-solid fa-terminal fa-fade" style="color: #e19a9a;"></i> Hello!</h3> 
+                <h1>I am <span>Shriram</span>!</h1>
+                <div class="subtext">
+                    <p>Software Engineer Intern at Knowledge Lens. <br><span>Python</span>, <span>MongoDB</span>, basically Backend <span> and also Love Travelling</span>.</p>
+                    <button id="Projectbutton">Projects</button>
+                </div>
+            </div>
+            <!-- Moved the Projects button to the bottom middle position -->
+            <div class="bottom-container">
+                <div class="connect">
+                    <h3>Let's Connect:</h3>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/shr1ram/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/shr1ramn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript to handle logout functionality and redirect to projects page -->
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            // Redirect to login page
+            window.location.href = 'login.html'; // Replace 'login.html' with your actual login page URL
+        });
+
+        document.getElementById('Projectbutton').addEventListener('click', function() {
+            // Redirect to projects page
+            window.location.href = 'projects.html'; // Replace 'projects.html' with your actual projects page URL
+        });
+    </script>
+</body>
+</html>
+
